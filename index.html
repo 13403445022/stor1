@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../xiyongfu/js/jquery-1.8.3.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 微软雅黑;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        img{
+            display: block;
+            border: none;
+        }
+
+        .home{
+            width: 100%;
+            height: 100%;
+            background: url("../xiyongfu/img/home1.png")no-repeat center center ;
+            background-size: cover;
+            overflow: hidden;
+        }
+        .footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 70px;
+            background: white;
+        }
+        .title{
+            width: 275px;
+            height: 23px;
+            margin-top: 30px;
+            margin-left: 360px;
+        }
+        .sjjz{
+            width: 757px;
+            height: 114px;
+            margin: 0 auto;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            margin-left: -379px;
+        }
+        .sjjz>img{
+            width: 100%;
+            height: 100%;
+        }
+        .home_klzc{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 248px;
+            height: 50px;
+            margin-left: -124px;
+        }
+        .home_xyjf{
+            position: absolute;
+            top:60%;
+            left: 50%;
+            width: 248px;
+            height: 50px;
+            margin-left: -124px;
+        }
+        .home_xyjf>img{
+            width: 100%;
+            height: 100%;
+        }
+        .home_klzc>img{
+            width: 100%;
+            height: 100%;
+        }
+        .foot1{
+            width: 100%;
+            height: 40px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        ul,li{
+            list-style: none;
+        }
+        ul{
+            width: 675px;
+            height: 39px;
+            margin: 0 auto;
+
+            overflow: hidden;
+        }
+        li{
+            width: 224px;
+            height: 20px;
+            float: left;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            border-right: 1px solid #666666;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+        .three{
+            border: none;
+        }
+        p{
+            text-align: center;
+            font-size: 14px;
+            color: #969696;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="home">
+    <div class="title"><img src="../xiyongfu/img/sxjh.png" alt=""></div>
+    <div class="sjjz"><img src="../xiyongfu/img/sjjz.png" alt=""></div>
+    <a class="home_klzc" href="../xiyongfu/index.html"><img src="../xiyongfu/img/xyjf.png " alt=""></a>
+    <a class="home_xyjf" href="../kailei/index.html"><img src="../xiyongfu/img/home_klzc.png" alt=""></a>
+
+    <div class="footer">
+        <div class="foot1">
+            <ul>
+                <li class="one"><a href="../xiyongfu/index.html">西安信用付金融服务有限公司</a></li>
+                <li class="two"><a href="index.html">山西锦华雨润信息科技有限公司</a></li>
+                <li class="three"><a href="../kailei/index.html">陕西凯雷资产管理有限公司</a></li>
+            </ul>
+        </div>
+        <p>Copyright2017山西锦华雨润信息科技有限公司 &nbsp; &nbsp; &nbsp; 晋ICP备16006430号</p>
+    </div>
+
+</div>
+<script>
+    // var bg = document.getElementsByClassName('home')[0];
+
+    var cont = 1;
+    function sum() {
+        cont++;
+        if(cont > 3){
+            cont = 1
+        }
+        $(".home").css({"background":"url(../xiyongfu/img/home"+cont+".png)no-repeat center center","background-size":"cover"})
+
+    }
+    setInterval(sum,1000)
+
+    // $(".home").css({background:"url(img/home\"+i+\".png)no-repeat center center"})
+</script>
+</body>
+</html>
